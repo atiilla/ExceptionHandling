@@ -7,8 +7,12 @@ public class test {
 		try {
 			learnAtCertainTemperature(300);
 		} catch (ExtremeHeatException e) {
-			
+			ExtremeHeatException ex =  new ExtremeHeatException("aaaaaa");
+			ex.errormsg();
+			System.out.println(ex.getMessage());
 			e.printStackTrace();
+			e.getCause();
+			
 		}
 		
 	}
