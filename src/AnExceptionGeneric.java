@@ -15,9 +15,11 @@ public class AnExceptionGeneric {
 		} catch (Throwable t) {
 			System.out.println("Error Log: "+ t);
 			
+		}finally {
+			key.close();
 		}
 		
-		key.close();
+		
 		
 
 	}
